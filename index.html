@@ -1,5 +1,7 @@
 <h1>WAKALA</h1>
+<select id="p"><option>M-Pesa</option><option>Airtel</option><option>Tigo</option><option>NMB</option><option>CRDB</option><option>Cash</option></select>
 <input id="n" type="number" placeholder="Kiasi">
 <button onclick="s()">Hifadhi</button>
-<h2>Jumla: <span id="j">0</span></h2>
-<script>let x=0;function s(){x+=+n.value;j.innerText=x}</script>
+<p id="r"></p><h2>Jumla: <b id="j">0</b></h2>
+<script>let x=0;function s(){x+=+n.value;r.innerHTML+=p.value+" "+n.value+"<br>";j.innerText=x}</script>
+Kisha Commit changes
