@@ -1,9 +1,12 @@
 
 <h1>WAKALA</h1>
-<input id="n" placeholder="Mteja">
+<select id="p">
+<option>M-Pesa</option><option>Airtel</option>
+<option>Tigo</option><option>Cash</option>
+</select>
 <input id="a" placeholder="Kiasi">
 <button onclick="s()">Hifadhi</button>
 <div id="r"></div>
 <script>
-function s(){r.innerHTML+=n.value+" - "+a.value+"<br>"}
+function s(){r.innerHTML+=p.value+" - "+a.value+"<br>"}
 </script>
