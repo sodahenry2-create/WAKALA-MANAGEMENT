@@ -1,7 +1,10 @@
-
 <h1>WAKALA</h1>
-<select id="p"><option>M-Pesa</option><option>Airtel</option><option>Tigo</option><option>NMB</option><option>CRDB</option><option>Cash</option></select>
-<select id="t"><option>Deposit</option><option>Withdrawal</option></select>
 <input id="n" type="number" placeholder="Kiasi">
-<button onclick="s()">Hifadhi</button><p id="r"></p>
-<script>function s(){r.innerHTML+=p.value+" "+t.value+" "+n.value+"<br>"}</script>
+<button onclick="d()">Deposit</button>
+<button onclick="w()">Withdrawal</button>
+<h2>Salio: <b id="s">0</b></h2>
+<script>
+let x=0;
+function d(){x+=+n.value;s.innerText=x}
+function w(){x-=+n.value;s.innerText=x}
+</script>
