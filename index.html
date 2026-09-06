@@ -1,13 +1,9 @@
 
-h1>WAKALA</h1>
-<input id="m" placeholder="Mauzo">
-<input id="x" placeholder="Matumizi">
-<button onclick="a()">Hifadhi</button>
-<p>Faida: <b id="f">0</b></p>
+<h1>WAKALA</h1>
+<input id="n" placeholder="Mteja">
+<input id="a" placeholder="Kiasi">
+<button onclick="s()">Hifadhi</button>
+<div id="r"></div>
 <script>
-function a(){
-f.innerText=m.value-x.value;
-localStorage.m=m.value;
-localStorage.x=x.value
-}
+function s(){r.innerHTML+=n.value+" - "+a.value+"<br>"}
 </script>
